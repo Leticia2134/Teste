@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Interativo</title>
+    <link rel="stylesheet" href="can.css">
+</head>
+<body>
+    <div id="kanban">
+        <div class="column" id="todo">
+            <h2>PARA FAZER</h2>
+            <div class="card" draggable="true">Card 1</div>
+            <div class="card" draggable="true">Card 2</div>
+            <div class="card" draggable="true">Card 3</div>
+            <div class="card" draggable="true">Card 4</div>
+        </div>
+        <div class="column" id="in-progress">
+            <h2>SENDO FEITO</h2>
+        </div>
+        <div class="column" id="done">
+            <h2>FEITO</h2>
+        </div>
+    </div>
+    <script src="do.js"></script>
+</body>
+</html>

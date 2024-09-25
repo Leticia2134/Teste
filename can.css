@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('kit.jpg') no-repeat center center fixed; /* Adiciona a imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color:#ffc0e7
+}
+
+#kanban {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.column {
+    width: 30%;
+    background-color: #eb53b1;
+    border: 1px solid #ffa6dd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.card {
+    background-color: #ff94df;
+    color: #ffe8f6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: move;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card.dragging {
+    opacity: 0.5;
+}
